@@ -1,4 +1,4 @@
 # Proposta app
 
-Projeto de estudo prático com Quarkus para desenvolvimento de uma API REST com Spring
+Projeto de estudo prático para desenvolvimento de uma API REST com Spring
 
