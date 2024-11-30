@@ -8,7 +8,7 @@ import com.leonardosdias.proposta_app.dto.PropostaRequestDTO;
 import com.leonardosdias.proposta_app.dto.PropostaResponseDTO;
 import com.leonardosdias.proposta_app.entity.Proposta;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface PropostaMapper {
 
     PropostaMapper INSTANCE = Mappers.getMapper(PropostaMapper.class);

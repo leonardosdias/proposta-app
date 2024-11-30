@@ -11,7 +11,7 @@ public class PropostaRequestDTO {
 
     private String nome;
 
-    private String sobreNome;
+    private String sobrenome;
 
     private String telefone;
 
