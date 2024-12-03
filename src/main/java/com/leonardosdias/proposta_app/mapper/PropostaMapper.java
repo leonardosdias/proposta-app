@@ -1,5 +1,7 @@
 package com.leonardosdias.proposta_app.mapper;
 
+import java.util.List;
+
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
@@ -8,7 +10,7 @@ import com.leonardosdias.proposta_app.dto.PropostaRequestDTO;
 import com.leonardosdias.proposta_app.dto.PropostaResponseDTO;
 import com.leonardosdias.proposta_app.entity.Proposta;
 
-@Mapper(componentModel = "spring")
+@Mapper
 public interface PropostaMapper {
 
     PropostaMapper INSTANCE = Mappers.getMapper(PropostaMapper.class);
@@ -30,4 +32,7 @@ public interface PropostaMapper {
     @Mapping(target = "cpf", source = "usuario.cpf")
     @Mapping(target = "renda", source = "usuario.renda")
     PropostaResponseDTO convertEntityToDto(Proposta proposta);
+
+    List<PropostaResponseDTO> convertListEntityToListDto(Iterable<Proposta> proposta);
+    
 }
